@@ -1,0 +1,22 @@
+.error {
+  color: red;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 20px;
+  padding: 20px;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+.error p:not(.close) {
+  color: black;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.close {
+  color: black;
+  font-size: 0.8rem;
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 0.5rem;
+}

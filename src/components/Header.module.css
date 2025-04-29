@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.header p {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  user-select: none;
+}
+.header p span {
+  background-color: var(--color);
+  border-radius: 50px;
+  color: black;
+  width: 24px;
+  text-align: center;
+}
+.button {
+  font-size: 22px;
+  cursor: pointer;
+  transition: .2s;
+  margin-right: .75rem;
+}
+.button:last-child {
+  margin: 0;
+}
+.button:hover {
+  color: var(--color);
+}

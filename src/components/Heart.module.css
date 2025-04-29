@@ -1,0 +1,130 @@
+.heart {
+  position: fixed;
+  z-index: 3;
+  color: white;
+  background-color: rgba(0, 0, 0, 70%);
+  width: 600px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  padding: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .heart {
+    width: 100%;
+    background-color: black;
+  }
+}
+@media screen and (max-width: 480px) {
+  .heart {
+    padding: 0;
+  }
+}
+.heartTitle {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 480px) {
+  .heartTitle {
+    padding: 1.5rem;
+  }
+}
+.heartTitle p {
+  font-size: 20px;
+}
+.heartClose {
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.heartClose:hover {
+  color: var(--color);
+}
+.heartItems {
+  margin-top: 2rem;
+  height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .heartItems {
+    margin: 0;
+  }
+}
+.heartImages {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .heartImages {
+    height: calc(100% - 2rem);
+  }
+}
+.heartImages p {
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .heartImages p {
+    padding: 0 1.5rem;
+    text-align: center;
+    line-height: 1.25;
+  }
+}
+.heartImages div:nth-child(2n) {
+  margin: 0 0 1rem 0;
+}
+.heartImages div:last-child {
+  margin-bottom: 56px;
+}
+.heartImagesBlock {
+  width: calc(50% - 0.5rem);
+  margin: 0 1rem 1rem 0;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  .heartImagesBlock {
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+    padding: 0 1.5rem;
+  }
+  .heartImages div:nth-child(2n) {
+    margin: 0 0 1.5rem 0;
+  }
+  .heartImages div:last-child {
+    padding-bottom: 2rem;
+  }
+}
+.heartImagesBlock img {
+  width: 100%;
+  border-radius: 20px;
+}
+.heartButton {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  z-index: 1;
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.heartButton:hover {
+  background-color: var(--color);
+}
+@media screen and (max-width: 480px) {
+  .heartButton {
+    right: 2.3rem;
+  }
+}
+.heartImagesDelete {
+  font-size: 20px;
+  top: 0.8rem;
+  padding: 3px 5px;
+}
+.heartImagesLink {
+  top: 3rem;
+  padding: 5px;
+}

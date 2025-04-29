@@ -1,0 +1,93 @@
+.menu {
+  position: fixed;
+  z-index: 3;
+  color: white;
+  background-color: rgba(0, 0, 0, 70%);
+  width: 600px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  padding: 1.5rem;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 100%;
+    background-color: black;
+  }
+}
+.menuTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.menuTitle p {
+  font-size: 20px;
+}
+.menuClose {
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.menuClose:hover {
+  color: var(--color);
+}
+.menuItems {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu p:not(.menuTitle p) {
+  width: 100%;
+  margin: .5rem 0 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.menuP {
+  margin-top: 1.5rem !important;
+}
+.menuItems div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px white;
+  padding: 1rem 0.5rem;
+  width: calc(25% - 0.4rem);
+  min-width: 100px;
+  margin: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  text-align: center;
+}
+.menuItems div:nth-child(4n) {
+  margin: 0 0 0.5rem 0;
+}
+.menuItems div:hover {
+  background-color: rgba(0, 0, 0, 30%);
+}
+@media screen and (max-width: 600px) {
+  .menuItems div {
+    width: calc(33% - 0.3rem);
+  }
+  .menuItems div:nth-child(4n) {
+    margin: 0 0.5rem 0.5rem 0;
+  }
+  .menuItems div:nth-child(3n) {
+    margin: 0 0 0.5rem 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .menuItems div {
+    width: calc(50% - 0.25rem);
+  }
+  .menuItems div:nth-child(3n) {
+    margin: 0 0.5rem 0.5rem 0;
+  }
+  .menuItems div:nth-child(2n) {
+    margin: 0 0 0.5rem 0;
+  }
+}
+.menuActive {
+  background-color: var(--color) !important;
+}
+.category_0 {
+  background-color: var(--color);
+}

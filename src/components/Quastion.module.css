@@ -1,0 +1,59 @@
+.quastion {
+  position: fixed;
+  z-index: 3;
+  color: white;
+  background-color: rgba(0, 0, 0, 70%);
+  width: 600px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  padding: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .quastion {
+    background-color: black;
+    width: 100%;
+  }
+}
+.quastionTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.quastionTitle p {
+  font-size: 20px;
+}
+.quastionClose {
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.quastionClose:hover {
+  color: var(--color);
+}
+.quastionItems {
+  margin-top: 2rem;
+  height: calc(100% - 3.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.quastionItems p,
+.quastionItems span {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.quastionItems p {
+  margin-bottom: 1rem;
+}
+.quastionItems p a {
+  text-decoration: underline;
+  margin-left: 6px;
+}
+.quastionItems span a {
+  margin-left: 0.5rem;
+  color: var(--color);
+  font-weight: bold;
+}
+.quastionItems span a:hover {
+  text-decoration: underline;
+}

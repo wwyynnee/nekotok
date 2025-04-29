@@ -1,0 +1,39 @@
+.images {
+  max-width: 500px;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+  padding-top: calc(56px + 1rem);
+}
+.images div {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  max-width: 500px;
+  width: calc(100% - 2rem);
+}
+.imagesHeart {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 80%);
+  border-radius: 0 0 20px 20px;
+  height: 56px;
+  font-size: 22px;
+  margin-top: -60px;
+  color: white;
+}
+.imagesHeart:hover {
+  background-color: black;
+  color: var(--color);
+}
+.imagesHeart:active {
+  color: white;
+}
+.img {
+  max-width: 500px;
+  width: calc(100vw - 2rem);
+  border-radius: 20px;
+}
+.img:hover {
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 50%);
+}
